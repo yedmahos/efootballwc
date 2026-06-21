@@ -99,8 +99,8 @@ export default function StandingsPage() {
         </div>
         <div className="flex flex-col gap-3">
           {standings.map((row) => (
-            <div key={`form-${row.team.id}`} className="flex items-center justify-end gap-3">
-              <TeamFlag code={row.team.code} country={row.team.country} className="w-8 h-5 border-2 border-black object-cover hidden sm:block shrink-0" />
+            <div key={`form-${row.team.id}`} className="flex items-center gap-3">
+              <TeamFlag code={row.team.code} country={row.team.country} className="w-8 h-5 border-2 border-black object-cover shrink-0" />
               <span className="text-xs font-black uppercase tracking-widest w-12 text-right shrink-0">{row.team.id}</span>
               <div className="flex gap-1">
                 {row.form.length === 0 ? (

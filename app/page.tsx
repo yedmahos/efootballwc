@@ -31,7 +31,7 @@ export default function HomePage() {
             title="Live Dashboard"
             description="A real-time snapshot of the race for the eFootball World Cup crown."
           />
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
             <StatCard
               icon="crown"
               label="Current Leader"
@@ -44,7 +44,7 @@ export default function HomePage() {
             <StatCard
               icon="goal"
               label="Matches Played"
-              value={`${stats.playedMatches} / ${stats.totalMatches}`}
+              value={`${stats.playedMatches}/${stats.totalMatches}`}
               sub={`${stats.totalMatches - stats.playedMatches} remaining`}
               index={1}
             />

@@ -172,12 +172,7 @@ export interface TournamentStats {
   winsByTeam: { name: string; country: string; wins: number; fill: string }[];
 }
 
-const chartColors: Record<TeamId, string> = {
-  ENG: "var(--chart-5)",
-  ARG: "var(--chart-3)",
-  FRA: "var(--chart-1)",
-  POR: "var(--chart-2)",
-};
+
 
 export function getStats(): TournamentStats {
   const standings = computeStandings();

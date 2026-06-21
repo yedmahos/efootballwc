@@ -29,39 +29,39 @@ export default function StatisticsPage() {
       </div>
 
       {/* Massive Top Level Stats */}
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 mb-16">
-        <div className="border-4 border-white bg-[var(--neon-purple)] text-white p-8 hover:-translate-y-2 transition-transform shadow-[8px_8px_0px_0px_white]">
-          <Goal className="size-12 mb-4" />
-          <p className="text-sm font-black uppercase tracking-widest border-b-2 border-white pb-2 mb-4">Total Goals</p>
-          <p className="font-heading text-7xl font-black">{stats.totalGoals}</p>
-          <p className="text-xl font-bold uppercase mt-2 opacity-80">{stats.avgGoals} Per Match</p>
+      <div className="grid grid-cols-2 xl:grid-cols-4 gap-3 sm:gap-6 mb-16">
+        <div className="border-4 border-white bg-[var(--neon-purple)] text-white p-4 sm:p-8 hover:-translate-y-2 transition-transform shadow-[4px_4px_0px_0px_white] sm:shadow-[8px_8px_0px_0px_white]">
+          <Goal className="size-8 sm:size-12 mb-2 sm:mb-4" />
+          <p className="text-[10px] sm:text-sm font-black uppercase tracking-widest border-b-2 border-white pb-2 mb-2 sm:mb-4">Total Goals</p>
+          <p className="font-heading text-4xl sm:text-7xl font-black">{stats.totalGoals}</p>
+          <p className="text-xs sm:text-xl font-bold uppercase mt-1 sm:mt-2 opacity-80">{stats.avgGoals} Per Match</p>
         </div>
 
-        <div className="border-4 border-white bg-black text-white p-8 hover:-translate-y-2 transition-transform shadow-[8px_8px_0px_0px_var(--neon-cyan)]">
-          <Target className="size-12 mb-4 text-[var(--neon-cyan)]" />
-          <p className="text-sm font-black uppercase tracking-widest border-b-2 border-white pb-2 mb-4 text-[var(--neon-cyan)]">Matches Played</p>
-          <p className="font-heading text-7xl font-black">{stats.playedMatches}</p>
-          <p className="text-xl font-bold uppercase mt-2 opacity-80">Out of {stats.totalMatches}</p>
+        <div className="border-4 border-white bg-black text-white p-4 sm:p-8 hover:-translate-y-2 transition-transform shadow-[4px_4px_0px_0px_var(--neon-cyan)] sm:shadow-[8px_8px_0px_0px_var(--neon-cyan)]">
+          <Target className="size-8 sm:size-12 mb-2 sm:mb-4 text-[var(--neon-cyan)]" />
+          <p className="text-[10px] sm:text-sm font-black uppercase tracking-widest border-b-2 border-white pb-2 mb-2 sm:mb-4 text-[var(--neon-cyan)]">Matches</p>
+          <p className="font-heading text-4xl sm:text-7xl font-black">{stats.playedMatches}</p>
+          <p className="text-xs sm:text-xl font-bold uppercase mt-1 sm:mt-2 opacity-80">Out of {stats.totalMatches}</p>
         </div>
 
-        <div className="border-4 border-white bg-[var(--neon-pink)] text-black p-8 hover:-translate-y-2 transition-transform shadow-[8px_8px_0px_0px_white]">
-          <BarChart3 className="size-12 mb-4" />
-          <p className="text-sm font-black uppercase tracking-widest border-b-2 border-black pb-2 mb-4">Best Attack</p>
-          <div className="flex items-center gap-3">
-            <TeamFlag code={stats.bestAttack.team.code} country={stats.bestAttack.team.country} className="w-12 h-8 border-2 border-black object-cover shrink-0" />
-            <p className="font-heading text-5xl font-black">{stats.bestAttack.team.id}</p>
+        <div className="border-4 border-white bg-[var(--neon-pink)] text-black p-4 sm:p-8 hover:-translate-y-2 transition-transform shadow-[4px_4px_0px_0px_white] sm:shadow-[8px_8px_0px_0px_white]">
+          <BarChart3 className="size-8 sm:size-12 mb-2 sm:mb-4" />
+          <p className="text-[10px] sm:text-sm font-black uppercase tracking-widest border-b-2 border-black pb-2 mb-2 sm:mb-4">Best Attack</p>
+          <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3">
+            <TeamFlag code={stats.bestAttack.team.code} country={stats.bestAttack.team.country} className="w-8 h-5 sm:w-12 sm:h-8 border-2 border-black object-cover shrink-0" />
+            <p className="font-heading text-2xl sm:text-5xl font-black">{stats.bestAttack.team.id}</p>
           </div>
-          <p className="text-xl font-bold uppercase mt-2">{stats.bestAttack.goals} Goals Scored</p>
+          <p className="text-xs sm:text-xl font-bold uppercase mt-1 sm:mt-2">{stats.bestAttack.goals} Goals</p>
         </div>
 
-        <div className="border-4 border-white bg-[var(--neon-cyan)] text-black p-8 hover:-translate-y-2 transition-transform shadow-[8px_8px_0px_0px_black]">
-          <Trophy className="size-12 mb-4" />
-          <p className="text-sm font-black uppercase tracking-widest border-b-2 border-black pb-2 mb-4">Most Wins</p>
-          <div className="flex items-center gap-3">
-            <TeamFlag code={stats.mostWins.team.code} country={stats.mostWins.team.country} className="w-12 h-8 border-2 border-black object-cover shrink-0" />
-            <p className="font-heading text-5xl font-black">{stats.mostWins.team.id}</p>
+        <div className="border-4 border-white bg-[var(--neon-cyan)] text-black p-4 sm:p-8 hover:-translate-y-2 transition-transform shadow-[4px_4px_0px_0px_black] sm:shadow-[8px_8px_0px_0px_black]">
+          <Trophy className="size-8 sm:size-12 mb-2 sm:mb-4" />
+          <p className="text-[10px] sm:text-sm font-black uppercase tracking-widest border-b-2 border-black pb-2 mb-2 sm:mb-4">Most Wins</p>
+          <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3">
+            <TeamFlag code={stats.mostWins.team.code} country={stats.mostWins.team.country} className="w-8 h-5 sm:w-12 sm:h-8 border-2 border-black object-cover shrink-0" />
+            <p className="font-heading text-2xl sm:text-5xl font-black">{stats.mostWins.team.id}</p>
           </div>
-          <p className="text-xl font-bold uppercase mt-2">{stats.mostWins.wins} Victories</p>
+          <p className="text-xs sm:text-xl font-bold uppercase mt-1 sm:mt-2">{stats.mostWins.wins} Wins</p>
         </div>
       </div>
 
@@ -119,35 +119,35 @@ export default function StatisticsPage() {
 
           {stats.highestScoringMatch && (
             <div className="flex flex-col h-full justify-center">
-              <div className="bg-white text-black border-4 border-white p-8">
-                <div className="flex justify-between items-center mb-6 border-b-4 border-black pb-4">
-                  <span className="font-black uppercase tracking-widest text-sm bg-black text-white px-3 py-1">
+              <div className="bg-white text-black border-4 border-white p-4 sm:p-8">
+                <div className="flex flex-col sm:flex-row justify-between items-center mb-4 sm:mb-6 border-b-4 border-black pb-4 gap-2">
+                  <span className="font-black uppercase tracking-widest text-xs sm:text-sm bg-black text-white px-3 py-1">
                     Matchday {stats.highestScoringMatch.matchday}
                   </span>
-                  <span className="font-black uppercase tracking-widest text-sm text-black/50">
+                  <span className="font-black uppercase tracking-widest text-xs sm:text-sm text-black/50 text-center">
                     {stats.highestScoringMatch.stadium}
                   </span>
                 </div>
 
-                <div className="flex items-center justify-between gap-4 text-center">
-                  <div className="flex flex-col items-center flex-1 gap-2">
-                    <TeamFlag code={teams[stats.highestScoringMatch.home].code} country={teams[stats.highestScoringMatch.home].country} className="w-16 h-10 border-2 border-black object-cover" />
-                    <span className="font-heading text-3xl font-black uppercase">
+                <div className="flex items-center justify-between gap-2 sm:gap-4 text-center">
+                  <div className="flex flex-col items-center flex-1 gap-1 sm:gap-2">
+                    <TeamFlag code={teams[stats.highestScoringMatch.home].code} country={teams[stats.highestScoringMatch.home].country} className="w-10 h-6 sm:w-16 sm:h-10 border-2 border-black object-cover shrink-0" />
+                    <span className="font-heading text-xl sm:text-3xl font-black uppercase">
                       {stats.highestScoringMatch.home}
                     </span>
-                    <span className="font-heading text-7xl font-black mt-1 text-[var(--neon-purple)]">
+                    <span className="font-heading text-5xl sm:text-7xl font-black mt-1 text-[var(--neon-purple)]">
                       {stats.highestScoringMatch.homeScore}
                     </span>
                   </div>
 
-                  <div className="w-2 h-24 bg-black skew-x-12 shrink-0" />
+                  <div className="w-1.5 sm:w-2 h-16 sm:h-24 bg-black skew-x-12 shrink-0" />
 
-                  <div className="flex flex-col items-center flex-1 gap-2">
-                    <TeamFlag code={teams[stats.highestScoringMatch.away].code} country={teams[stats.highestScoringMatch.away].country} className="w-16 h-10 border-2 border-black object-cover" />
-                    <span className="font-heading text-3xl font-black uppercase">
+                  <div className="flex flex-col items-center flex-1 gap-1 sm:gap-2">
+                    <TeamFlag code={teams[stats.highestScoringMatch.away].code} country={teams[stats.highestScoringMatch.away].country} className="w-10 h-6 sm:w-16 sm:h-10 border-2 border-black object-cover shrink-0" />
+                    <span className="font-heading text-xl sm:text-3xl font-black uppercase">
                       {stats.highestScoringMatch.away}
                     </span>
-                    <span className="font-heading text-7xl font-black mt-1 text-[var(--neon-pink)]">
+                    <span className="font-heading text-5xl sm:text-7xl font-black mt-1 text-[var(--neon-pink)]">
                       {stats.highestScoringMatch.awayScore}
                     </span>
                   </div>
