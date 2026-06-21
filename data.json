@@ -133,23 +133,23 @@
       "homeScore": 4,
       "awayScore": 0,
       "status": "completed",
-      "kickoff": "2026-06-24T08:32:00.000Z",
+      "kickoff": "2026-06-24T03:02:00.000Z",
       "stadium": "Wembley Stadium",
       "possession": {
-        "home": 56,
-        "away": 44
+        "home": 44,
+        "away": 56
       },
       "shots": {
-        "home": 1,
-        "away": 7
+        "home": 7,
+        "away": 1
       },
       "shotsOnTarget": {
-        "home": 0,
-        "away": 6
+        "home": 6,
+        "away": 0
       },
       "corners": {
-        "home": 0,
-        "away": 1
+        "home": 1,
+        "away": 0
       },
       "goals": [
         {

@@ -277,7 +277,7 @@ function MatchEditor({ match }: any) {
             className="flex items-center gap-2 bg-[var(--neon-cyan)] text-black font-bold uppercase tracking-widest px-4 py-2 hover:bg-white transition-colors w-full sm:w-auto justify-center"
           >
             <Upload className="size-5" />
-            {isParsing ? "PARSING..." : "AI PARSER"}
+            {isParsing ? "PARSING..." : "UPLOAD"}
           </button>
           <input type="file" accept="image/*" className="hidden" ref={fileInputRef} onChange={handleFileUpload} />
         </div>
