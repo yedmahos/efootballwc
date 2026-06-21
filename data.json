@@ -1,0 +1,362 @@
+{
+  "teams": {
+    "ENG": {
+      "id": "ENG",
+      "country": "England",
+      "player": "saptak dey",
+      "code": "gb-eng",
+      "color": "#e11d48",
+      "manager": "Thomas Tuchel"
+    },
+    "ARG": {
+      "id": "ARG",
+      "country": "Argentina",
+      "player": "angshu dey",
+      "code": "ar",
+      "color": "#38bdf8",
+      "manager": "Lionel Scaloni"
+    },
+    "FRA": {
+      "id": "FRA",
+      "country": "France",
+      "player": "aditya dey",
+      "code": "fr",
+      "color": "#3b82f6",
+      "manager": "Didier Deschamps"
+    },
+    "POR": {
+      "id": "POR",
+      "country": "Portugal",
+      "player": "soham dey",
+      "code": "pt",
+      "color": "#16a34a",
+      "manager": "Roberto Martinez"
+    },
+    "TBD": {
+      "id": "TBD",
+      "country": "TBD",
+      "player": "TBD",
+      "code": "un",
+      "color": "#666666",
+      "manager": "TBD"
+    }
+  },
+  "matches": [
+    {
+      "id": 1,
+      "matchday": 1,
+      "home": "POR",
+      "away": "ENG",
+      "homeScore": 0,
+      "awayScore": 2,
+      "status": "completed",
+      "kickoff": "2026-06-22T08:32:00.000Z",
+      "stadium": "Wembley Stadium",
+      "possession": {
+        "home": 46,
+        "away": 54
+      },
+      "shots": {
+        "home": 6,
+        "away": 5
+      },
+      "shotsOnTarget": {
+        "home": 2,
+        "away": 3
+      },
+      "corners": {
+        "home": 0,
+        "away": 0
+      },
+      "goals": [
+        {
+          "minute": 0,
+          "team": "ENG",
+          "scorer": "Saka"
+        },
+        {
+          "minute": 0,
+          "team": "ENG",
+          "scorer": "Kane"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "matchday": 1,
+      "home": "ARG",
+      "away": "FRA",
+      "homeScore": 1,
+      "awayScore": 2,
+      "status": "completed",
+      "kickoff": "2026-06-23T08:32:00.000Z",
+      "stadium": "Wembley Stadium",
+      "possession": {
+        "home": 60,
+        "away": 40
+      },
+      "shots": {
+        "home": 4,
+        "away": 4
+      },
+      "shotsOnTarget": {
+        "home": 2,
+        "away": 2
+      },
+      "corners": {
+        "home": 0,
+        "away": 0
+      },
+      "goals": [
+        {
+          "minute": 0,
+          "team": "ARG",
+          "scorer": "Messi"
+        },
+        {
+          "minute": 0,
+          "team": "FRA",
+          "scorer": "Cherki"
+        },
+        {
+          "minute": 0,
+          "team": "FRA",
+          "scorer": "Mbappe"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "matchday": 2,
+      "home": "POR",
+      "away": "ARG",
+      "homeScore": 4,
+      "awayScore": 0,
+      "status": "completed",
+      "kickoff": "2026-06-24T08:32:00.000Z",
+      "stadium": "Wembley Stadium",
+      "possession": {
+        "home": 56,
+        "away": 44
+      },
+      "shots": {
+        "home": 1,
+        "away": 7
+      },
+      "shotsOnTarget": {
+        "home": 0,
+        "away": 6
+      },
+      "corners": {
+        "home": 0,
+        "away": 1
+      },
+      "goals": [
+        {
+          "minute": 0,
+          "team": "POR",
+          "scorer": "Conceição "
+        },
+        {
+          "minute": 0,
+          "team": "POR",
+          "scorer": "Leao"
+        },
+        {
+          "minute": 0,
+          "team": "POR",
+          "scorer": "Ronaldo"
+        },
+        {
+          "minute": 0,
+          "team": "POR",
+          "scorer": "Ramos"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "matchday": 2,
+      "home": "ENG",
+      "away": "FRA",
+      "homeScore": 2,
+      "awayScore": 1,
+      "status": "completed",
+      "kickoff": "2026-06-25T08:32:00.000Z",
+      "stadium": "Wembley Stadium",
+      "possession": {
+        "home": 47,
+        "away": 53
+      },
+      "shots": {
+        "home": 3,
+        "away": 3
+      },
+      "shotsOnTarget": {
+        "home": 2,
+        "away": 2
+      },
+      "corners": {
+        "home": 2,
+        "away": 0
+      },
+      "goals": [
+        {
+          "minute": 0,
+          "team": "FRA",
+          "scorer": "Mbappe"
+        },
+        {
+          "minute": 0,
+          "team": "ENG",
+          "scorer": "Kane"
+        },
+        {
+          "minute": 0,
+          "team": "ENG",
+          "scorer": "Kane"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "matchday": 3,
+      "home": "POR",
+      "away": "FRA",
+      "homeScore": 2,
+      "awayScore": 0,
+      "status": "completed",
+      "kickoff": "2026-06-26T03:02:00.000Z",
+      "stadium": "Wembley Stadium",
+      "possession": {
+        "home": 53,
+        "away": 47
+      },
+      "shots": {
+        "home": 6,
+        "away": 6
+      },
+      "shotsOnTarget": {
+        "home": 2,
+        "away": 0
+      },
+      "corners": {
+        "home": 0,
+        "away": 1
+      },
+      "goals": [
+        {
+          "minute": 43,
+          "team": "POR",
+          "scorer": "Vitinha"
+        },
+        {
+          "minute": 73,
+          "team": "POR",
+          "scorer": "R. Neves"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "matchday": 3,
+      "home": "ENG",
+      "away": "ARG",
+      "homeScore": null,
+      "awayScore": null,
+      "status": "upcoming",
+      "kickoff": "2026-06-27T14:02:55.125Z",
+      "stadium": "Wembley Stadium"
+    },
+    {
+      "id": 7,
+      "matchday": 4,
+      "home": "ENG",
+      "away": "POR",
+      "homeScore": null,
+      "awayScore": null,
+      "status": "upcoming",
+      "kickoff": "2026-06-28T14:02:55.125Z",
+      "stadium": "Wembley Stadium"
+    },
+    {
+      "id": 8,
+      "matchday": 4,
+      "home": "FRA",
+      "away": "ARG",
+      "homeScore": null,
+      "awayScore": null,
+      "status": "upcoming",
+      "kickoff": "2026-06-29T14:02:55.125Z",
+      "stadium": "Wembley Stadium"
+    },
+    {
+      "id": 9,
+      "matchday": 5,
+      "home": "ARG",
+      "away": "POR",
+      "homeScore": null,
+      "awayScore": null,
+      "status": "upcoming",
+      "kickoff": "2026-06-30T14:02:55.125Z",
+      "stadium": "Wembley Stadium"
+    },
+    {
+      "id": 10,
+      "matchday": 5,
+      "home": "FRA",
+      "away": "ENG",
+      "homeScore": null,
+      "awayScore": null,
+      "status": "upcoming",
+      "kickoff": "2026-07-01T14:02:55.125Z",
+      "stadium": "Wembley Stadium"
+    },
+    {
+      "id": 11,
+      "matchday": 6,
+      "home": "FRA",
+      "away": "POR",
+      "homeScore": null,
+      "awayScore": null,
+      "status": "upcoming",
+      "kickoff": "2026-07-02T14:02:55.125Z",
+      "stadium": "Wembley Stadium"
+    },
+    {
+      "id": 12,
+      "matchday": 6,
+      "home": "ARG",
+      "away": "ENG",
+      "homeScore": null,
+      "awayScore": null,
+      "status": "upcoming",
+      "kickoff": "2026-07-03T14:02:55.125Z",
+      "stadium": "Wembley Stadium"
+    },
+    {
+      "id": 13,
+      "matchday": 7,
+      "home": "TBD",
+      "away": "TBD",
+      "homeScore": null,
+      "awayScore": null,
+      "status": "upcoming",
+      "kickoff": "2026-07-04T14:00:00.000Z",
+      "stadium": "Wembley Stadium",
+      "stage": "knockout"
+    },
+    {
+      "id": 14,
+      "matchday": 8,
+      "home": "TBD",
+      "away": "TBD",
+      "homeScore": null,
+      "awayScore": null,
+      "status": "upcoming",
+      "kickoff": "2026-07-05T14:00:00.000Z",
+      "stadium": "Wembley Stadium",
+      "stage": "knockout"
+    }
+  ]
+}
