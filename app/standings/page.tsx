@@ -20,20 +20,21 @@ export default function StandingsPage() {
         />
       </div>
 
-      <div className="maximalist-card p-0 overflow-x-auto bg-black">
-        <table className="w-full text-left border-collapse">
-          <thead>
+      <div className="maximalist-card p-0 bg-black w-full">
+        <div className="overflow-x-auto w-full">
+          <table className="w-full text-left border-collapse min-w-max">
+            <thead>
             <tr className="bg-[var(--neon-purple)] border-b-4 border-white text-white">
-              <th className="px-6 py-4 font-heading text-lg font-black uppercase tracking-widest border-r-4 border-white w-16 text-center">#</th>
-              <th className="px-6 py-4 font-heading text-lg font-black uppercase tracking-widest border-r-4 border-white">Nation</th>
-              <th className="px-6 py-4 font-heading text-lg font-black uppercase tracking-widest border-r-4 border-white text-center">P</th>
-              <th className="px-6 py-4 font-heading text-lg font-black uppercase tracking-widest border-r-4 border-white text-center">W</th>
-              <th className="px-6 py-4 font-heading text-lg font-black uppercase tracking-widest border-r-4 border-white text-center">D</th>
-              <th className="px-6 py-4 font-heading text-lg font-black uppercase tracking-widest border-r-4 border-white text-center">L</th>
-              <th className="px-6 py-4 font-heading text-lg font-black uppercase tracking-widest border-r-4 border-white text-center hidden sm:table-cell">GF</th>
-              <th className="px-6 py-4 font-heading text-lg font-black uppercase tracking-widest border-r-4 border-white text-center hidden sm:table-cell">GA</th>
-              <th className="px-6 py-4 font-heading text-lg font-black uppercase tracking-widest border-r-4 border-white text-center hidden md:table-cell">GD</th>
-              <th className="px-6 py-4 font-heading text-xl font-black uppercase tracking-widest text-center text-black bg-[var(--neon-cyan)]">Pts</th>
+              <th className="px-2 py-3 sm:px-6 sm:py-4 font-heading text-sm sm:text-lg font-black uppercase tracking-widest border-r-4 border-white w-10 sm:w-16 text-center">#</th>
+              <th className="px-3 py-3 sm:px-6 sm:py-4 font-heading text-sm sm:text-lg font-black uppercase tracking-widest border-r-4 border-white">Nation</th>
+              <th className="px-2 py-3 sm:px-6 sm:py-4 font-heading text-sm sm:text-lg font-black uppercase tracking-widest border-r-4 border-white text-center">P</th>
+              <th className="px-2 py-3 sm:px-6 sm:py-4 font-heading text-sm sm:text-lg font-black uppercase tracking-widest border-r-4 border-white text-center">W</th>
+              <th className="px-2 py-3 sm:px-6 sm:py-4 font-heading text-sm sm:text-lg font-black uppercase tracking-widest border-r-4 border-white text-center">D</th>
+              <th className="px-2 py-3 sm:px-6 sm:py-4 font-heading text-sm sm:text-lg font-black uppercase tracking-widest border-r-4 border-white text-center">L</th>
+              <th className="px-2 py-3 sm:px-6 sm:py-4 font-heading text-sm sm:text-lg font-black uppercase tracking-widest border-r-4 border-white text-center hidden sm:table-cell">GF</th>
+              <th className="px-2 py-3 sm:px-6 sm:py-4 font-heading text-sm sm:text-lg font-black uppercase tracking-widest border-r-4 border-white text-center hidden sm:table-cell">GA</th>
+              <th className="px-2 py-3 sm:px-6 sm:py-4 font-heading text-sm sm:text-lg font-black uppercase tracking-widest border-r-4 border-white text-center hidden md:table-cell">GD</th>
+              <th className="px-3 py-3 sm:px-6 sm:py-4 font-heading text-base sm:text-xl font-black uppercase tracking-widest text-center text-black bg-[var(--neon-cyan)]">Pts</th>
             </tr>
           </thead>
           <tbody>
@@ -47,45 +48,46 @@ export default function StandingsPage() {
                     idx === standings.length - 1 && "border-b-0",
                   )}
                 >
-                  <td className="px-6 py-6 border-r-4 border-white text-center bg-white/5">
+                  <td className="px-2 py-4 sm:px-6 sm:py-6 border-r-4 border-white text-center bg-white/5">
                     <span className={cn(
-                      "font-heading text-3xl font-black",
+                      "font-heading text-xl sm:text-3xl font-black",
                       isTop ? "text-white" : "text-white/50"
                     )}>
                       {row.rank}
                     </span>
                   </td>
-                  <td className="px-6 py-6 border-r-4 border-white">
-                    <div className="flex items-center gap-4">
-                      <TeamFlag code={row.team.code} country={row.team.country} className="w-12 h-8 border-2 border-white object-cover shrink-0" />
+                  <td className="px-3 py-4 sm:px-6 sm:py-6 border-r-4 border-white">
+                    <div className="flex items-center gap-2 sm:gap-4">
+                      <TeamFlag code={row.team.code} country={row.team.country} className="w-8 h-5 sm:w-12 sm:h-8 border-2 border-white object-cover shrink-0" />
                       <div className="flex flex-col">
-                        <span className="font-heading text-2xl font-black uppercase tracking-wide text-white group-hover:text-[var(--neon-cyan)] transition-colors flex items-center gap-2">
+                        <span className="font-heading text-base sm:text-2xl font-black uppercase tracking-wide text-white group-hover:text-[var(--neon-cyan)] transition-colors flex items-center gap-1 sm:gap-2">
                           {row.team.country}
-                          {isTop && isTournamentOver && <Crown className="size-6 text-gold fill-gold" />}
+                          {isTop && isTournamentOver && <Crown className="size-4 sm:size-6 text-gold fill-gold" />}
                         </span>
-                        <span className="text-xs font-bold uppercase tracking-widest text-white/50">
+                        <span className="text-[10px] sm:text-xs font-bold uppercase tracking-widest text-white/50">
                           {row.team.player}
                         </span>
                       </div>
                     </div>
                   </td>
-                  <td className="px-6 py-6 border-r-4 border-white text-center font-bold text-white text-xl">{row.played}</td>
-                  <td className="px-6 py-6 border-r-4 border-white text-center font-bold text-[var(--neon-cyan)] text-xl">{row.wins}</td>
-                  <td className="px-6 py-6 border-r-4 border-white text-center font-bold text-white/70 text-xl">{row.draws}</td>
-                  <td className="px-6 py-6 border-r-4 border-white text-center font-bold text-[var(--neon-pink)] text-xl">{row.losses}</td>
-                  <td className="px-6 py-6 border-r-4 border-white text-center font-bold text-white text-xl hidden sm:table-cell">{row.goalsFor}</td>
-                  <td className="px-6 py-6 border-r-4 border-white text-center font-bold text-white text-xl hidden sm:table-cell">{row.goalsAgainst}</td>
-                  <td className="px-6 py-6 border-r-4 border-white text-center font-bold text-white text-xl hidden md:table-cell">
+                  <td className="px-2 py-4 sm:px-6 sm:py-6 border-r-4 border-white text-center font-bold text-white text-base sm:text-xl">{row.played}</td>
+                  <td className="px-2 py-4 sm:px-6 sm:py-6 border-r-4 border-white text-center font-bold text-[var(--neon-cyan)] text-base sm:text-xl">{row.wins}</td>
+                  <td className="px-2 py-4 sm:px-6 sm:py-6 border-r-4 border-white text-center font-bold text-white/70 text-base sm:text-xl">{row.draws}</td>
+                  <td className="px-2 py-4 sm:px-6 sm:py-6 border-r-4 border-white text-center font-bold text-[var(--neon-pink)] text-base sm:text-xl">{row.losses}</td>
+                  <td className="px-2 py-4 sm:px-6 sm:py-6 border-r-4 border-white text-center font-bold text-white text-base sm:text-xl hidden sm:table-cell">{row.goalsFor}</td>
+                  <td className="px-2 py-4 sm:px-6 sm:py-6 border-r-4 border-white text-center font-bold text-white text-base sm:text-xl hidden sm:table-cell">{row.goalsAgainst}</td>
+                  <td className="px-2 py-4 sm:px-6 sm:py-6 border-r-4 border-white text-center font-bold text-white text-base sm:text-xl hidden md:table-cell">
                     {row.goalDiff > 0 ? `+${row.goalDiff}` : row.goalDiff}
                   </td>
-                  <td className="px-6 py-6 font-heading text-4xl font-black text-center text-white bg-white/5 group-hover:bg-[var(--neon-cyan)] group-hover:text-black transition-colors">
+                  <td className="px-3 py-4 sm:px-6 sm:py-6 font-heading text-2xl sm:text-4xl font-black text-center text-white bg-white/5 group-hover:bg-[var(--neon-cyan)] group-hover:text-black transition-colors">
                     {row.points}
                   </td>
                 </tr>
               );
             })}
           </tbody>
-        </table>
+          </table>
+        </div>
       </div>
 
       <div className="mt-12 flex flex-col sm:flex-row items-start sm:items-center gap-6 p-6 border-4 border-white bg-[var(--neon-cyan)] text-black shadow-[8px_8px_0px_0px_rgba(255,255,255,1)]">
